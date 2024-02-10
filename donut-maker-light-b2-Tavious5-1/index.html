@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tavious' Donut Clicker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">About The Company</a>
+            <ul class="dropdown">
+              <li><a href="/companyInformation.html">CompanyInfo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://orteil.dashnet.org/cookieclicker/"
+              >Original Cookie Clicker</a>
+          </li>
+          <li>
+            <a href="#">Developer Info</a>
+            <ul class="dropdown">
+              <li><button id="open">More about me</button></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/instructions.html">Instuctions </a>
+          </li>
+        </ul>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <p>
+              I am on the road to becoming a great software developer. This game
+              is something that I worked on to test my skills. check out my
+              <a href="https://github.com/Tavious5">Github</a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Tavious' donut clicker</h1>
+      <h2 id="count">Donuts: 0</h2>
+      <img src="/pokedonut.jpg" alt="Gastly Donut" width="320" height="250" id="clickMe"/>
+      <br />
+      <button id="autoClickerButton">
+        Auto Click Cost: <span id="autoClickCost">100</span>
+      </button>
+      <p id="autoClickCounter">AutoClickers: 0</p>
+      <br />
+      <br />
+      <button id="reset">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
